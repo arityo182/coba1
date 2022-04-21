@@ -12,14 +12,14 @@ def index():
 
 @app.route('/server1/getdata', methods=['GET'])
 def get_data():
-    url = 'http://119.13.124.218:8091/'
+    url = 'http://94.74.127.32:8091/getdata'
     response = requests.request('GET', url)
     return response.text
 
 
 @app.route('/server2/getdata', methods=['GET'])
 def get_data2():
-    url = 'http://119.13.124.218:8092'
+    url = 'localhost:8092'
     response = requests.request('GET', url)
     return response.text
 
